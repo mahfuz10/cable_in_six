@@ -1,1 +1,11 @@
-This is main page
+<script type="text/javascript">
+  function testCable() {
+    chatChannel.send({ sent_by: "Paul 1", body: "This is a cool chat app." });
+  }
+</script>
+
+<p>This is main page</p>
+
+<div style="padding-top: 20px;">
+  <button onclick="testCable()">Test Cable</button>
+</div>

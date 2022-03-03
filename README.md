@@ -3,22 +3,13 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+- Start server: rails s
+- Open: http://localhost:3000
+- Click "Test Cable" button
 
-* Ruby version
+Now you should see body is filtered in log:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+[ActionCable] Broadcasting to chat_Best Room: {"sent_by"=>"Paul 1", "body"=>"{filtered}"}
+ChatChannel transmitting {"sent_by"=>"Paul 1", "body"=>"{filtered}"} (via streamed from chat_Best Room)
+```
